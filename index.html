@@ -121,13 +121,13 @@
             border: 1px solid rgba(124, 58, 237, 0.15);
             transition: all 0.2s ease;
         }
-        
+
         .btn-menu:hover {
             background-color: rgba(124, 58, 237, 0.1);
             border-color: rgba(124, 58, 237, 0.3);
             box-shadow: 0 2px 6px rgba(124, 58, 237, 0.15);
         }
-        
+
         .btn-menu:active {
             transform: translateY(1px);
         }
@@ -140,7 +140,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .btn-discord:hover {
             background-color: rgba(88, 101, 242, 0.2);
             border-color: rgba(88, 101, 242, 0.6);
@@ -156,17 +156,17 @@
             border-radius: 0.375rem;
             transition: all 0.2s ease;
         }
-        
+
         .footer-link:hover {
             background-color: rgba(124, 58, 237, 0.05);
             border-color: rgba(124, 58, 237, 0.2);
         }
-        
+
         .footer-link i {
             opacity: 0.7;
             transition: opacity 0.2s ease, transform 0.2s ease;
         }
-        
+
         .footer-link:hover i {
             opacity: 1;
             transform: translateX(2px);
@@ -229,7 +229,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
         }
-        
+
         .feature-card::after {
             content: '';
             position: absolute;
@@ -241,7 +241,7 @@
             transform: translateX(-100%);
             transition: transform 0.5s ease;
         }
-        
+
         .feature-card:hover::after {
             transform: translateX(100%);
         }
@@ -308,15 +308,13 @@
     </div>
 
     <div id="main-content" class="hidden w-full mx-auto relative flex flex-col min-h-screen">
-        <!-- Background effects -->
+
         <div class="fixed top-10 left-10 w-72 h-72 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-70 animate-pulse floating"></div>
         <div class="fixed bottom-10 right-10 w-72 h-72 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-70 animate-pulse floating-delay"></div>
         <div class="fixed top-1/3 right-1/4 w-40 h-40 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-50 animate-pulse" style="animation-delay: 3s;"></div>
 
-        <!-- Particles -->
         <div class="particles" id="particles"></div>
 
-        <!-- Header section -->
         <header class="sticky top-0 z-50 w-full px-4 py-2">
             <div class="max-w-7xl mx-auto">
                 <div class="flex justify-between items-center p-3 bg-[#16162a]/90 glass-effect border border-[#2d2b52] rounded-2xl shadow-xl">
@@ -326,8 +324,7 @@
                         </div>
                         <h1 class="text-xl font-bold text-white">Havern <span class="text-[#7c3aed]">Bot</span></h1>
                     </div>
-                    
-                    <!-- Desktop Navigation -->
+
                     <nav class="hidden md:flex gap-3">
                         <a href="#" class="nav-item active flex items-center p-3 px-4 text-gray-300 rounded-xl">
                             <i class="fas fa-home mr-2 text-[#7c3aed]"></i>
@@ -346,14 +343,12 @@
                             <span>Invite Bot</span>
                         </a>
                     </nav>
-                    
-                    <!-- Mobile menu button -->
+
                     <button id="mobile-menu-button" class="md:hidden btn-menu p-2 rounded-lg text-white transition-all duration-200">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
-                
-                <!-- Mobile Navigation -->
+
                 <div id="mobile-menu" class="mobile-menu-hidden mt-2 p-3 bg-[#16162a]/90 glass-effect border border-[#2d2b52] rounded-2xl shadow-xl md:hidden">
                     <div class="flex flex-col gap-2">
                         <a href="#" class="nav-item active flex items-center p-3 px-4 text-gray-300 rounded-xl">
@@ -377,7 +372,6 @@
             </div>
         </header>
 
-        <!-- Hero section -->
         <main class="flex-1 flex flex-col items-center justify-center px-4 py-12 md:py-20">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="flex justify-center mb-6">
@@ -400,13 +394,12 @@
             </div>
         </main>
 
-        <!-- Features section -->
         <section id="features" class="py-16 px-4">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-3xl font-bold text-white text-center mb-12">Powerful <span class="text-[#7c3aed]">Features</span></h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Feature 1 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-shield-alt text-xl"></i>
@@ -414,8 +407,7 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Moderation Tools</h3>
                         <p class="text-gray-400">Powerful moderation commands to keep your server safe and organized with ease.</p>
                     </div>
-                    
-                    <!-- Feature 2 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-user-plus text-xl"></i>
@@ -423,8 +415,7 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Welcome System</h3>
                         <p class="text-gray-400">Customize welcome messages and autoroles for new members joining your server.</p>
                     </div>
-                    
-                    <!-- Feature 3 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-cog text-xl"></i>
@@ -432,8 +423,7 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Advanced Configuration</h3>
                         <p class="text-gray-400">Easy-to-use dashboard to configure all bot settings without complex commands.</p>
                     </div>
-                    
-                    <!-- Feature 4 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-clipboard-list text-xl"></i>
@@ -441,8 +431,7 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Logging System</h3>
                         <p class="text-gray-400">Comprehensive logging for server events, moderation actions, and member activities.</p>
                     </div>
-                    
-                    <!-- Feature 5 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-tags text-xl"></i>
@@ -450,8 +439,7 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Role Management</h3>
                         <p class="text-gray-400">Create self-assignable roles, reaction roles, and hierarchical role systems.</p>
                     </div>
-                    
-                    <!-- Feature 6 -->
+
                     <div class="feature-card rounded-xl p-6 overflow-hidden relative">
                         <div class="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-bullhorn text-xl"></i>
@@ -463,7 +451,6 @@
             </div>
         </section>
 
-        <!-- CTA section -->
         <section class="py-16 px-4 relative overflow-hidden">
             <div class="max-w-4xl mx-auto text-center relative z-10">
                 <div class="bg-[#16162a]/80 glass-effect border border-[#2d2b52] rounded-2xl p-8 md:p-12 shadow-xl">
@@ -483,11 +470,10 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="py-12 px-4 bg-[#121224]/90 backdrop-blur-md border-t border-[#2d2b52]">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                    <!-- Column 1: Havern -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4 relative inline-block after:content-[''] after:absolute after:w-full after:h-[3px] after:bg-gradient-to-r after:from-[#7c3aed] after:to-transparent after:bottom-[-8px] after:left-0">HAVERN</h3>
                         <ul class="space-y-2">
@@ -498,8 +484,7 @@
                             <li><a href="#" class="footer-link text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1 duration-200"><i class="fas fa-chevron-right text-xs text-[#7c3aed] mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>Careers</a></li>
                         </ul>
                     </div>
-                    
-                    <!-- Column 2: Legal -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4 relative inline-block after:content-[''] after:absolute after:w-full after:h-[3px] after:bg-gradient-to-r after:from-[#7c3aed] after:to-transparent after:bottom-[-8px] after:left-0">LEGAL</h3>
                         <ul class="space-y-2">
@@ -508,10 +493,7 @@
                             <li><a href="/cookies" class="footer-link text-gray-400 hover:text-white transition-colors flex items-center hover:translate-x-1 duration-200"><i class="fas fa-chevron-right text-xs text-[#7c3aed] mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>Cookie Policy</a></li>
                         </ul>
                     </div>
-                    
-               
-                    
-                    <!-- Column 4: Contact -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4 relative inline-block after:content-[''] after:absolute after:w-full after:h-[3px] after:bg-gradient-to-r after:from-[#7c3aed] after:to-transparent after:bottom-[-8px] after:left-0">CONNECT</h3>
                         <ul class="space-y-2">
@@ -520,7 +502,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="pt-8 border-t border-[#2d2b52] flex flex-col md:flex-row justify-between items-center">
                     <div class="flex items-center mb-4 md:mb-0">
                         <img src="https://havern.cc/images/logo.png" alt="Havern Logo" class="h-8 w-8 mr-3">
@@ -542,75 +524,66 @@
         window.addEventListener('load', function () {
             const preloader = document.getElementById('preloader');
             const mainContent = document.getElementById('main-content');
-            
+
             setTimeout(function () {
                 preloader.classList.add('hidden');
                 mainContent.classList.remove('hidden');
                 preloader.remove();
             }, 1000);
-            
-            // Mobile menu toggle
+
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
             mobileMenuButton.addEventListener('click', function() {
                 mobileMenu.classList.toggle('mobile-menu-hidden');
             });
-            
-            // Close mobile menu when clicking outside
+
             document.addEventListener('click', function(event) {
                 if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
                     mobileMenu.classList.add('mobile-menu-hidden');
                 }
             });
-            
-            // Smooth scroll for anchor links
+
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     if (this.getAttribute('href') !== '#') {
                         e.preventDefault();
-                        
+
                         const targetId = this.getAttribute('href');
                         const targetElement = document.querySelector(targetId);
-                        
+
                         if (targetElement) {
                             window.scrollTo({
                                 top: targetElement.offsetTop - 80,
                                 behavior: 'smooth'
                             });
-                            
-                            // Close mobile menu after clicking a link
+
                             mobileMenu.classList.add('mobile-menu-hidden');
                         }
                     }
                 });
             });
-            
-            // Create particles
+
             const particlesContainer = document.getElementById('particles');
             const particleCount = 80;
-            
+
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.classList.add('particle');
-                
-                // Random position
+
                 const posX = Math.random() * window.innerWidth;
                 const posY = Math.random() * window.innerHeight;
                 particle.style.left = `${posX}px`;
                 particle.style.top = `${posY}px`;
-                
-                // Random size
+
                 const size = Math.random() * 5 + 1;
                 particle.style.width = `${size}px`;
                 particle.style.height = `${size}px`;
-                
-                // Random opacity
+
                 particle.style.opacity = Math.random() * 0.5 + 0.1;
-                
-                // Random animation delay
+
                 particle.style.animationDelay = `${Math.random() * 1}s`;
-                
+
                 particlesContainer.appendChild(particle);
             }
         });

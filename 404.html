@@ -228,15 +228,13 @@
 </head>
 <body>
     <div id="main-content" class="w-full mx-auto relative flex flex-col min-h-screen">
-        <!-- Background effects -->
+
         <div class="fixed top-10 left-10 w-72 h-72 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-70 animate-pulse floating"></div>
         <div class="fixed bottom-10 right-10 w-72 h-72 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-70 animate-pulse floating-delay"></div>
         <div class="fixed top-1/3 right-1/4 w-40 h-40 bg-[#7c3aed]/10 rounded-full filter blur-3xl opacity-50 animate-pulse" style="animation-delay: 3s;"></div>
 
-        <!-- Particles -->
         <div class="particles" id="particles"></div>
 
-        <!-- Header section -->
         <header class="sticky top-0 z-50 w-full px-4 py-2">
             <div class="max-w-7xl mx-auto">
                 <div class="flex justify-between items-center p-3 bg-[#16162a]/90 glass-effect border border-[#2d2b52] rounded-2xl shadow-xl">
@@ -248,8 +246,7 @@
                             <h1 class="text-xl font-bold text-white">Havern <span class="text-[#7c3aed]">Bot</span></h1>
                         </a>
                     </div>
-                    
-                    <!-- Desktop Navigation -->
+
                     <nav class="hidden md:flex gap-3">
                         <a href="/" class="nav-item flex items-center p-3 px-4 text-gray-300 rounded-xl">
                             <i class="fas fa-home mr-2"></i>
@@ -268,14 +265,12 @@
                             <span>Invite Bot</span>
                         </a>
                     </nav>
-                    
-                    <!-- Mobile menu button -->
+
                     <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-white hover:bg-[#2d2b52]">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
-                
-                <!-- Mobile Navigation -->
+
                 <div id="mobile-menu" class="mobile-menu-hidden mt-2 p-3 bg-[#16162a]/90 glass-effect border border-[#2d2b52] rounded-2xl shadow-xl md:hidden">
                     <div class="flex flex-col gap-2">
                         <a href="/" class="nav-item flex items-center p-3 px-4 text-gray-300 rounded-xl">
@@ -299,13 +294,12 @@
             </div>
         </header>
 
-        <!-- Error content -->
         <main class="flex-1 flex items-center justify-center px-4 py-16">
             <div class="max-w-4xl w-full mx-auto error-card rounded-2xl p-6 md:p-12 flex flex-col items-center text-center">
                 <div class="glitch error-text mb-6">404</div>
                 <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Page Not Found</h1>
                 <p class="text-lg text-gray-300 mb-8 max-w-2xl">The page you are looking for doesn't exist or has been moved to another URL.</p>
-                
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md">
                     <a href="/" class="btn flex items-center justify-center p-3 px-6 bg-[#7c3aed] text-white rounded-xl hover:bg-[#6d28d9] transition-all">
                         <i class="fas fa-home mr-2"></i>
@@ -316,7 +310,7 @@
                         <span>Go Back</span>
                     </a>
                 </div>
-                
+
                 <div class="mt-12 p-5 rounded-xl bg-[#121224]/50 border border-[#2d2b52] w-full max-w-lg">
                     <h2 class="text-xl font-semibold text-white mb-3">Lost? Try these links:</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
@@ -341,11 +335,10 @@
             </div>
         </main>
 
-        <!-- Footer -->
         <footer class="py-12 px-4 bg-[#121224] border-t border-[#2d2b52]">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    <!-- Column 1: Havern -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4">HAVERN</h3>
                         <ul class="space-y-2">
@@ -356,8 +349,7 @@
                             <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
                         </ul>
                     </div>
-                    
-                    <!-- Column 2: Legal -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4">LEGAL</h3>
                         <ul class="space-y-2">
@@ -366,8 +358,7 @@
                             <li><a href="/cookies" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
                         </ul>
                     </div>
-                    
-                    <!-- Column 3: Connect -->
+
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4">CONNECT</h3>
                         <ul class="space-y-2">
@@ -376,7 +367,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="pt-8 border-t border-[#2d2b52] flex flex-col md:flex-row justify-between items-center">
                     <div class="flex items-center mb-4 md:mb-0">
                         <img src="https://havern.cc/images/logo.png" alt="Havern Logo" class="h-8 w-8 mr-3">
@@ -395,48 +386,42 @@
     </div>
 
     <script>
-        // Mobile menu toggle
+
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', function() {
             mobileMenu.classList.toggle('mobile-menu-hidden');
         });
-        
-        // Close mobile menu when clicking outside
+
         document.addEventListener('click', function(event) {
             if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
                 mobileMenu.classList.add('mobile-menu-hidden');
             }
         });
-        
-        // Create particles
+
         const particlesContainer = document.getElementById('particles');
         const particleCount = 30;
-        
+
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
             particle.classList.add('particle');
-            
-            // Random position
+
             const posX = Math.random() * window.innerWidth;
             const posY = Math.random() * window.innerHeight;
             particle.style.left = `${posX}px`;
             particle.style.top = `${posY}px`;
-            
-            // Random size
+
             const size = Math.random() * 5 + 1;
             particle.style.width = `${size}px`;
             particle.style.height = `${size}px`;
-            
-            // Random opacity
+
             particle.style.opacity = Math.random() * 0.5 + 0.1;
-            
-            // Random animation delay
+
             particle.style.animationDelay = `${Math.random() * 15}s`;
-            
+
             particlesContainer.appendChild(particle);
         }
     </script>
 </body>
-</html> 
+</html>
